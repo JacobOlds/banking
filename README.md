@@ -1,41 +1,79 @@
-# Python Wordle
+# Banking OOP Practice
 
-A command-line Wordle clone written in Python.  
-This version retrieves words from the WordGameDB API, validates user input, and provides colorized feedback using Wordle-style rules.
-This project uses the WordGameDB.com API for educational and non-commercial purposes.
+**Version:** 0.1.0  
+**Status:** Early practice / in progress  
 
+This project is a **Python Object-Oriented Programming (OOP) Practice application**
 
-## Features
+---
 
-- Fetches a random word from an external API  (WordGameDB)
-- ANSI color-coded output for terminal play
-- Two-pass Wordle evaluation algorithm:
-  - Green: correct letter in the correct position
-  - Yellow: correct letter in the wrong position
-  - Gray: incorrect letter
-- Input validation (alphabetic only, correct word length)
-- Dynamic guess count based on word length
-- Ability to replay multiple rounds
+## Project Goals
 
-## Requirements
+This project was built to:
 
-- Python 3.7+
-- `requests` library
+- Learn **Python OOP fundamentals**
+- learn how **classes manage state**
+- work with **methods, user input, and control flow**
+- practice ** semantic versioning** from the beginning of a project
 
-Install dependencies:
-```bash
-pip install requests
-```
-## How to Run
+Version 0.1.0 represents a functional starting point with known limitations.
 
-Clone the repository:
-git clone https://github.com/JacobOlds/python-wordle.git
+---
 
-Change into the project directory:
-cd python-wordle
+## Features (v0.1.0)
 
-Install dependencies:
-pip install requests
+- BankAccount class with:
+  - Account owner
+  - Account balance
+  - Deposit method
+  - Withdraw method
+  - Balance display
+- Two predefined accounts
+- Command-line menu to:
+  - Select which account to access
+  - Deposit funds
+  - Withdraw funds
+  - View current balance
 
-Run the game:
-python Wordle.py
+## How to run
+
+python banking.py
+
+## Example flow
+
+- Program starts
+- User selects an account (1 or 2)
+- User chooses an action:
+  - Deposit money
+  - Withdraw Money
+  - View Balance
+
+All changes are applied to the account object in memory.
+
+## Known limiations:
+
+- No validation for negative deposits or overdrafts
+- Withdrawl logic is currently incomplete
+- No persisitent storage (data resets each run)
+- Limited error handling
+- Only supports two hardcoded accounts
+
+## Planned improvements:
+
+Potential future improvements include:
+
+- Complete withdrawl/deposit logic with balance checks
+- Input handling and improved error handling
+- Unit tests
+- File or database persistence
+
+## What This Project Demonstrates
+
+- Understanding of Python classes and methods
+- Ability to model real-world systems using OOP
+- Comfort with CLI-based applications
+- Early adoption of software versioning best practices
+
+## Final notes
+
+This project is part of ongoing Python practice and is expected to evolve over time. Clarity and learning value are prioritezed over completeness.
